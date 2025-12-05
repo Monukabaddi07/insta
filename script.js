@@ -14,7 +14,7 @@ document.getElementById('sendDMBtn').addEventListener('click', async () => {
 
   try {
     // Replace with your Vercel backend endpoint
-    const res = await fetch(`https://your-vercel-domain.vercel.app/api/sendDM?toUser=${toUser}&message=${encodeURIComponent(message)}`);
+    const res = await fetch(`https://insta-56tp.vercel.app/api/sendDM?toUser=${toUser}&message=${encodeURIComponent(message)}`);
     const data = await res.json();
 
     if (data.success) {
@@ -28,4 +28,5 @@ document.getElementById('sendDMBtn').addEventListener('click', async () => {
     status.textContent = "Network error or backend issue.";
     status.style.color = "red";
   }
+
 });
